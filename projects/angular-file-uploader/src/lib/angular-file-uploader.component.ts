@@ -206,7 +206,7 @@ export class AngularFileUploaderComponent implements OnChanges {
     // Add data to be sent in this request
     this.allowedFiles.forEach((file, i) => {
       formData.append(
-        this.Caption[i] || 'file' + (this.fileNameIndex ? i : ''),
+        'forecastFile',
         this.allowedFiles[i]
       );
     });
